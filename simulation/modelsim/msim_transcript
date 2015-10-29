@@ -1,0 +1,96 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Proje_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/MyXor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MyXor
+# 
+# Top level modules:
+# 	MyXor
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/MyAnd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MyAnd
+# 
+# Top level modules:
+# 	MyAnd
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/mux_full.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_full
+# 
+# Top level modules:
+# 	mux_full
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/Sub4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Sub4
+# 
+# Top level modules:
+# 	Sub4
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/mux_base.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_base
+# 
+# Top level modules:
+# 	mux_base
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/Adder4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder4
+# 
+# Top level modules:
+# 	Adder4
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/Adder1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder1
+# 
+# Top level modules:
+# 	Adder1
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/SevenSegment.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SevenSegment
+# 
+# Top level modules:
+# 	SevenSegment
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/Proje_Pin.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Proje_Pin
+# 
+# Top level modules:
+# 	Proje_Pin
+# vlog -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test {C:/Users/YAVUZ/Desktop/test/proje.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Proje
+# 
+# Top level modules:
+# 	Proje
+# 
+vlog -reportprogress 300 -work work C:/Users/YAVUZ/Desktop/test/demo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+vsim work.demo
+# vsim work.demo 
+# Loading work.demo
+# Loading work.Proje
+# Loading work.Adder4
+# Loading work.Adder1
+# Loading work.Sub4
+# Loading work.MyAnd
+# Loading work.MyXor
+# Loading work.mux_full
+# Loading work.mux_base
+# Loading work.SevenSegment
+run
+# selector[3]=0 selector[2]=0 selector[1]=0 selector[0]=1 subtractor[8]=1; subtractor[9]=0;
+# selector[3]=1 selector[2]=1 selector[1]=1 selector[0]=0 subtractor[8]=1; subtractor[9]=0;
+# selector[3]=0 selector[2]=1 selector[1]=0 selector[0]=1 subtractor[8]=1; subtractor[9]=0;
+# selector[3]=0 selector[2]=0 selector[1]=1 selector[0]=0 subtractor[8]=1; subtractor[9]=0;

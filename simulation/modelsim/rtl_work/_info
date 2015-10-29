@@ -1,0 +1,232 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\YAVUZ\Desktop\test\simulation\modelsim
+vAdder1
+I0P7iZV^oM7fG[N10Cn_iH0
+VD=ohS;KB[Z67SACJP=mRg3
+Z1 dC:\Users\YAVUZ\Desktop\test\simulation\modelsim
+w1444113624
+8C:/Users/YAVUZ/Desktop/test/Adder1.v
+FC:/Users/YAVUZ/Desktop/test/Adder1.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/YAVUZ/Desktop/test -O0
+n@adder1
+!i10b 1
+!s100 NngU^gGK45ORad]0zGZS]0
+!s85 0
+!s108 1444342535.580000
+!s107 C:/Users/YAVUZ/Desktop/test/Adder1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/Adder1.v|
+!s101 -O0
+vAdder4
+IdU]WEm1oPb`G:eE2JKoDG0
+VYb_gWMU`o31?VBD<f7?T?2
+R1
+w1444113675
+8C:/Users/YAVUZ/Desktop/test/Adder4.v
+FC:/Users/YAVUZ/Desktop/test/Adder4.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@adder4
+!i10b 1
+!s100 f^W=H2Y=D9Lzha>P^C[Q:1
+!s85 0
+!s108 1444342535.403000
+!s107 C:/Users/YAVUZ/Desktop/test/Adder4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/Adder4.v|
+!s101 -O0
+vdemo
+!i10b 1
+!s100 EYBa^=ba`^b5=BK>8]]JO3
+I9j9lIJb:PORo_1NU^BCJR3
+V2one<i1aK@<MFYJAJ_U>E1
+R1
+w1444342505
+8C:/Users/YAVUZ/Desktop/test/demo.v
+FC:/Users/YAVUZ/Desktop/test/demo.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1444342552.825000
+!s107 C:/Users/YAVUZ/Desktop/test/demo.v|
+!s90 -reportprogress|300|-work|work|C:/Users/YAVUZ/Desktop/test/demo.v|
+!s101 -O0
+o-work work -O0
+vmux_base
+IYLc><YeMb?lgLk<;@M_W[1
+Vb8@SHQHDT7392]z;SZdVo1
+R1
+w1444145544
+8C:/Users/YAVUZ/Desktop/test/mux_base.v
+FC:/Users/YAVUZ/Desktop/test/mux_base.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 9>WA[F=W@DfoYoQO:aRU62
+!s85 0
+!s108 1444342535.266000
+!s107 C:/Users/YAVUZ/Desktop/test/mux_base.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/mux_base.v|
+!s101 -O0
+vmux_full
+IZJ2ZzW[??SFWjIi@3V5?h0
+V0GSaX=KC`2P6WL]R1670H3
+R1
+w1444202861
+8C:/Users/YAVUZ/Desktop/test/mux_full.v
+FC:/Users/YAVUZ/Desktop/test/mux_full.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Z=mDc?@EY?AU9ndOh5]?12
+!s85 0
+!s108 1444342534.861000
+!s107 C:/Users/YAVUZ/Desktop/test/mux_full.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/mux_full.v|
+!s101 -O0
+vMyAnd
+I>Nz8JZ7E7f>DWckU_c8J62
+VlZbPYMJjJ1^zL3343zdSn3
+R1
+w1444288128
+8C:/Users/YAVUZ/Desktop/test/MyAnd.v
+FC:/Users/YAVUZ/Desktop/test/MyAnd.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@my@and
+!i10b 1
+!s100 caQ^F^VL[H3^gzlZ[EXzz3
+!s85 0
+!s108 1444342534.638000
+!s107 C:/Users/YAVUZ/Desktop/test/MyAnd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/MyAnd.v|
+!s101 -O0
+vMyXor
+IjdDN;nef@VSS3JP_g[;T]3
+V0<@VCV9HPBMzFoHB^23HK3
+R1
+w1444288111
+8C:/Users/YAVUZ/Desktop/test/MyXor.v
+FC:/Users/YAVUZ/Desktop/test/MyXor.v
+L0 1
+R2
+r1
+31
+R3
+n@my@xor
+R4
+!i10b 1
+!s100 MlhzB8RGPzSjO=KIBl51B2
+!s85 0
+!s108 1444342534.408000
+!s107 C:/Users/YAVUZ/Desktop/test/MyXor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/MyXor.v|
+!s101 -O0
+vProje
+I:[c^J<3[PkN@gg2WlFS2=3
+V^OBRoP?<=UIE=>mB^67X41
+R1
+w1444290015
+8C:/Users/YAVUZ/Desktop/test/proje.v
+FC:/Users/YAVUZ/Desktop/test/proje.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@proje
+!i10b 1
+!s100 aHlbkdX>QLAhBS@eOAVA91
+!s85 0
+!s108 1444342536.079000
+!s107 C:/Users/YAVUZ/Desktop/test/proje.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/proje.v|
+!s101 -O0
+vProje_Pin
+In5?Vl?fLET:WhZfmA9D>M2
+VJ5:]hoH`SJS?QdTjl`3oK3
+R1
+w1444289459
+8C:/Users/YAVUZ/Desktop/test/Proje_Pin.v
+FC:/Users/YAVUZ/Desktop/test/Proje_Pin.v
+L0 15
+R2
+r1
+31
+R3
+R4
+n@proje_@pin
+!i10b 1
+!s100 EAC2glU[X68adBK0P`YN73
+!s85 0
+!s108 1444342535.877000
+!s107 C:/Users/YAVUZ/Desktop/test/Proje_Pin.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/Proje_Pin.v|
+!s101 -O0
+vSevenSegment
+I_X>2^Z_dXXA5EOIaJH:MR2
+Vjfjz]ffDoK@gic@X::HV92
+R1
+w1444340678
+8C:/Users/YAVUZ/Desktop/test/SevenSegment.v
+FC:/Users/YAVUZ/Desktop/test/SevenSegment.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@seven@segment
+!i10b 1
+!s100 D^HQd<]E0idTeTcR5H6o72
+!s85 0
+!s108 1444342535.760000
+!s107 C:/Users/YAVUZ/Desktop/test/SevenSegment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/SevenSegment.v|
+!s101 -O0
+vSub4
+IaNP;2eeH`]]GOL8U7D8Fb2
+VKO89JERI1lm;:9eK1Fhk63
+R1
+w1444288155
+8C:/Users/YAVUZ/Desktop/test/Sub4.v
+FC:/Users/YAVUZ/Desktop/test/Sub4.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@sub4
+!i10b 1
+!s100 MNeaWh:X?XBfj245^UhQQ1
+!s85 0
+!s108 1444342535.169000
+!s107 C:/Users/YAVUZ/Desktop/test/Sub4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YAVUZ/Desktop/test|C:/Users/YAVUZ/Desktop/test/Sub4.v|
+!s101 -O0

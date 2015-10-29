@@ -1,0 +1,399 @@
+|Proje_Pin
+hex0[0] <= Proje:comb_3.port1
+hex0[1] <= Proje:comb_3.port1
+hex0[2] <= Proje:comb_3.port1
+hex0[3] <= Proje:comb_3.port1
+hex0[4] <= Proje:comb_3.port1
+hex0[5] <= Proje:comb_3.port1
+hex0[6] <= Proje:comb_3.port1
+led[0] <= Proje:comb_3.port0
+led[1] <= Proje:comb_3.port0
+led[2] <= Proje:comb_3.port0
+led[3] <= Proje:comb_3.port0
+led[4] <= Proje:comb_3.port0
+led[5] <= Proje:comb_3.port0
+led[6] <= Proje:comb_3.port0
+led[7] <= Proje:comb_3.port0
+led[8] <= Proje:comb_3.port0
+led[9] <= Proje:comb_3.port0
+sw[0] => sw[0].IN1
+sw[1] => sw[1].IN1
+sw[2] => sw[2].IN1
+sw[3] => sw[3].IN1
+sw[4] => sw[4].IN1
+sw[5] => sw[5].IN1
+sw[6] => sw[6].IN1
+sw[7] => sw[7].IN1
+sw[8] => sw[8].IN1
+sw[9] => sw[9].IN1
+
+
+|Proje_Pin|Proje:comb_3
+led[0] <= led[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= <GND>
+led[5] <= <GND>
+led[6] <= <GND>
+led[7] <= <GND>
+led[8] <= <GND>
+led[9] <= <GND>
+hex0[0] <= SevenSegment:mySS.port0
+hex0[1] <= SevenSegment:mySS.port0
+hex0[2] <= SevenSegment:mySS.port0
+hex0[3] <= SevenSegment:mySS.port0
+hex0[4] <= SevenSegment:mySS.port0
+hex0[5] <= SevenSegment:mySS.port0
+hex0[6] <= SevenSegment:mySS.port0
+sw[0] => sw[0].IN4
+sw[1] => sw[1].IN4
+sw[2] => sw[2].IN4
+sw[3] => sw[3].IN4
+sw[4] => sw[4].IN4
+sw[5] => sw[5].IN4
+sw[6] => sw[6].IN4
+sw[7] => sw[7].IN4
+sw[8] => sw[8].IN1
+sw[9] => sw[9].IN1
+
+
+|Proje_Pin|Proje:comb_3|Adder4:myAdd
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+carryOut <= Adder1:addr4.port3
+result[0] <= Adder1:addr1.port2
+result[1] <= Adder1:addr2.port2
+result[2] <= Adder1:addr3.port2
+result[3] <= Adder1:addr4.port2
+carryIn => carryIn.IN1
+
+
+|Proje_Pin|Proje:comb_3|Adder4:myAdd|Adder1:addr1
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Adder4:myAdd|Adder1:addr2
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Adder4:myAdd|Adder1:addr3
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Adder4:myAdd|Adder1:addr4
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => negative[0].IN1
+B[1] => negative[1].IN1
+B[2] => negative[2].IN1
+B[3] => negative[3].IN1
+carryOut <= Adder4:addProcess.port2
+result2[0] <= Adder4:addProcess.port3
+result2[1] <= Adder4:addProcess.port3
+result2[2] <= Adder4:addProcess.port3
+result2[3] <= Adder4:addProcess.port3
+carryIn => ~NO_FANOUT~
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub|Adder4:addProcess
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+carryOut <= Adder1:addr4.port3
+result[0] <= Adder1:addr1.port2
+result[1] <= Adder1:addr2.port2
+result[2] <= Adder1:addr3.port2
+result[3] <= Adder1:addr4.port2
+carryIn => carryIn.IN1
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub|Adder4:addProcess|Adder1:addr1
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub|Adder4:addProcess|Adder1:addr2
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub|Adder4:addProcess|Adder1:addr3
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|Sub4:mySub|Adder4:addProcess|Adder1:addr4
+x => temp.IN0
+x => temp3.IN0
+y => temp.IN1
+y => temp3.IN1
+result <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => comb.IN1
+carryIn => temp2.IN1
+
+
+|Proje_Pin|Proje:comb_3|MyAnd:my_And
+A[0] => comb.IN0
+A[1] => comb.IN0
+A[2] => comb.IN0
+A[3] => comb.IN0
+B[0] => comb.IN1
+B[1] => comb.IN1
+B[2] => comb.IN1
+B[3] => comb.IN1
+result3[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result3[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result3[2] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result3[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proje_Pin|Proje:comb_3|MyXor:my_Xor
+A[0] => comb.IN0
+A[1] => comb.IN0
+A[2] => comb.IN0
+A[3] => comb.IN0
+B[0] => comb.IN1
+B[1] => comb.IN1
+B[2] => comb.IN1
+B[3] => comb.IN1
+result4[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result4[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result4[2] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+result4[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proje_Pin|Proje:comb_3|mux_full:testme
+fout[0] <= mux_base:calcbit0.port0
+fout[1] <= mux_base:calcbit1.port0
+fout[2] <= mux_base:calcbit2.port0
+fout[3] <= mux_base:calcbit3.port0
+selector[0] => selector[0].IN4
+selector[1] => selector[1].IN4
+adder[0] => adder[0].IN1
+adder[1] => adder[1].IN1
+adder[2] => adder[2].IN1
+adder[3] => adder[3].IN1
+subtractor[0] => subtractor[0].IN1
+subtractor[1] => subtractor[1].IN1
+subtractor[2] => subtractor[2].IN1
+subtractor[3] => subtractor[3].IN1
+andop[0] => andop[0].IN1
+andop[1] => andop[1].IN1
+andop[2] => andop[2].IN1
+andop[3] => andop[3].IN1
+xorop[0] => xorop[0].IN1
+xorop[1] => xorop[1].IN1
+xorop[2] => xorop[2].IN1
+xorop[3] => xorop[3].IN1
+
+
+|Proje_Pin|Proje:comb_3|mux_full:testme|mux_base:calcbit0
+f <= result.DB_MAX_OUTPUT_PORT_TYPE
+s0 => a2.IN0
+s0 => a4.IN0
+s0 => a1.IN0
+s0 => a3.IN0
+s1 => a3.IN1
+s1 => a4.IN1
+s1 => a1.IN1
+s1 => a2.IN1
+b0 => a1.IN2
+b1 => a2.IN2
+b2 => a3.IN2
+b3 => a4.IN2
+
+
+|Proje_Pin|Proje:comb_3|mux_full:testme|mux_base:calcbit1
+f <= result.DB_MAX_OUTPUT_PORT_TYPE
+s0 => a2.IN0
+s0 => a4.IN0
+s0 => a1.IN0
+s0 => a3.IN0
+s1 => a3.IN1
+s1 => a4.IN1
+s1 => a1.IN1
+s1 => a2.IN1
+b0 => a1.IN2
+b1 => a2.IN2
+b2 => a3.IN2
+b3 => a4.IN2
+
+
+|Proje_Pin|Proje:comb_3|mux_full:testme|mux_base:calcbit2
+f <= result.DB_MAX_OUTPUT_PORT_TYPE
+s0 => a2.IN0
+s0 => a4.IN0
+s0 => a1.IN0
+s0 => a3.IN0
+s1 => a3.IN1
+s1 => a4.IN1
+s1 => a1.IN1
+s1 => a2.IN1
+b0 => a1.IN2
+b1 => a2.IN2
+b2 => a3.IN2
+b3 => a4.IN2
+
+
+|Proje_Pin|Proje:comb_3|mux_full:testme|mux_base:calcbit3
+f <= result.DB_MAX_OUTPUT_PORT_TYPE
+s0 => a2.IN0
+s0 => a4.IN0
+s0 => a1.IN0
+s0 => a3.IN0
+s1 => a3.IN1
+s1 => a4.IN1
+s1 => a1.IN1
+s1 => a2.IN1
+b0 => a1.IN2
+b1 => a2.IN2
+b2 => a3.IN2
+b3 => a4.IN2
+
+
+|Proje_Pin|Proje:comb_3|SevenSegment:mySS
+hex0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+led[0] => temp.IN0
+led[0] => temp8.IN1
+led[0] => temp14.IN1
+led[0] => WideAnd1.IN0
+led[0] => WideAnd2.IN0
+led[0] => temp39.IN0
+led[0] => temp3.IN0
+led[0] => temp9.IN0
+led[0] => temp12.IN1
+led[0] => WideAnd0.IN0
+led[0] => WideAnd3.IN0
+led[0] => temp24.IN0
+led[0] => temp25.IN0
+led[0] => temp29.IN0
+led[0] => temp30.IN0
+led[0] => temp37.IN0
+led[1] => temp2.IN0
+led[1] => temp4.IN0
+led[1] => temp7.IN0
+led[1] => WideAnd1.IN1
+led[1] => WideAnd3.IN1
+led[1] => temp24.IN1
+led[1] => temp26.IN0
+led[1] => temp32.IN0
+led[1] => temp36.IN0
+led[1] => temp37.IN1
+led[1] => temp11.IN0
+led[1] => temp13.IN0
+led[1] => temp15.IN0
+led[1] => temp16.IN0
+led[1] => WideAnd2.IN1
+led[1] => temp29.IN1
+led[1] => WideAnd4.IN0
+led[1] => WideAnd5.IN0
+led[2] => temp5.IN1
+led[2] => temp4.IN1
+led[2] => temp28.IN0
+led[2] => WideAnd2.IN2
+led[2] => WideAnd3.IN2
+led[2] => temp27.IN0
+led[2] => temp30.IN1
+led[2] => WideAnd4.IN1
+led[2] => WideAnd5.IN1
+led[2] => temp6.IN1
+led[2] => temp3.IN1
+led[2] => temp9.IN1
+led[2] => temp10.IN0
+led[2] => WideAnd0.IN1
+led[2] => WideAnd1.IN2
+led[2] => temp25.IN1
+led[2] => temp31.IN0
+led[2] => temp36.IN1
+led[2] => temp38.IN0
+led[3] => temp.IN1
+led[3] => temp2.IN1
+led[3] => temp7.IN1
+led[3] => temp28.IN1
+led[3] => temp16.IN1
+led[3] => temp26.IN1
+led[3] => temp27.IN1
+led[3] => temp31.IN1
+led[3] => temp32.IN1
+led[3] => temp38.IN1
+led[3] => temp39.IN1
+led[3] => temp10.IN1
+led[3] => temp11.IN1
+led[3] => temp13.IN1
+led[3] => temp15.IN1
+led[3] => WideAnd0.IN2
+led[3] => WideAnd4.IN2
+led[3] => WideAnd5.IN2
+
+
